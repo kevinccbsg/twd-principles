@@ -164,7 +164,7 @@ npm install --save @nestjs/typeorm typeorm sqlite3
 
 Update `app.module.ts`:
 
-```ts
+```ts{9-15}
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
@@ -228,7 +228,7 @@ export class AppService {
 
 Update controller to accept `title`:
 
-```ts
+```ts{11-13}
 import { Body, Controller, Post } from '@nestjs/common';
 import { AppService } from './app.service';
 
@@ -279,7 +279,7 @@ In TWD, when we deal with a DB, the idea is that our test should:
 
 So we need our test to access the database. In NestJS, we can get the repository like this:
 
-```ts
+```ts{1,9}
 let todoRepository: Repository<Todo>;
 
 beforeEach(async () => {
@@ -295,7 +295,7 @@ beforeEach(async () => {
 
 With that in place, we can now assert that the data was actually stored:
 
-```ts
+```ts{9-11}
 it('/todos (POST)', async () => {
   const title = 'test';
   await request(app.getHttpServer())
@@ -437,7 +437,7 @@ Now let’s implement the feature itself.
 
 Update `src/app.controller.ts`:
 
-```ts
+```ts{15-18}
 import { Body, Controller, Get, Post } from '@nestjs/common';
 import { AppService } from './app.service';
 
@@ -461,7 +461,7 @@ export class AppController {
 
 And update `src/app.service.ts`:
 
-```ts
+```ts{18-21}
 import { Injectable } from '@nestjs/common';
 import { Todo } from './entities/todos.entity';
 import { Repository } from 'typeorm';
