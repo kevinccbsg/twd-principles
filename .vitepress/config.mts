@@ -10,7 +10,7 @@ export default defineConfig({
     ],
     sidebar: [
       {
-        text: 'Guide',
+        text: 'Introduction',
         items: [
           { text: 'TWD Manifesto', link: '/twd-manifesto' },
           { text: 'Rethinking Testing: Why I Test While Developing', link: '/motivation' }

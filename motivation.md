@@ -1,3 +1,7 @@
+---
+title: Rethinking Testing - Why I Test While Developing
+---
+
 # Rethinking Testing: Why I Test While Developing
 
 These days, we're surrounded by tools that help us move faster — frameworks, CLIs, even AI that writes code for us. It's never been easier to build.

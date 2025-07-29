@@ -1,3 +1,8 @@
+---
+title: Testing while developing TWD - NestJS example
+---
+
+
 # Testing while developing TWD - NestJS example
 
 In this article, we’ll apply the [TWD mindset](https://dev.to/kevinccbsg/rethinking-testing-why-i-test-while-developing-3pi1) to a NestJS project.
