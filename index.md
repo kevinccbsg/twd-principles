@@ -1,25 +1,23 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
 hero:
   name: "TWD principles"
-  text: "TWD principles"
-  tagline: My great project tagline
+  text: "Test While Developing"
+  tagline: "A practical mindset for fast, confident software development"
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Read the Manifesto
+      link: /twd-manifesto
+    # - theme: alt
+    #   text: NestJS Testing Example
+    #   link: /examples/nestjs-testing
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Write tests while building, not after
+    details: Testing is part of the development flow — not something you add at the end.
+  - title: Automate what you already check manually
+    details: If you’re repeating a check by hand, it’s a good candidate for a test.
+  - title: Let real use guide what you test
+    details: Focus on the behaviors and flows your users actually rely on.
 ---
-
