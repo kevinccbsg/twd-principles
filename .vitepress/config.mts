@@ -3,6 +3,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "TWD principles",
   description: "Test While Developing — A philosophy for writing tests while developing software.",
+  base: '/twd-principles/',
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
